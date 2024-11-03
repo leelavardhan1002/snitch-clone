@@ -1,0 +1,33 @@
+/* Container for the hero slider */
+.hero-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Wrapper for the slides */
+  .hero-slider__slides {
+    display: flex;
+    flex-wrap: wrap; /* Wrap slides in a new row for smaller screens */
+  }
+  
+  /* Individual slide */
+  .hero-slider__slide {
+    width: 100%; /* Take up full width of container */
+    flex-shrink: 0;
+  }
+  
+  /* Style the slide images */
+  .hero-slider__image {
+    width: 100%; /* Take up full width of slide */
+    max-width: 100%; /* Set a maximum width to prevent image overflow */
+    height: auto; /* Scale the image height proportionally */
+    object-fit: cover; /* Scale image to fit the slide while maintaining aspect ratio */
+  }
+  
+  /* Hide the navigation controls on smaller screens */
+  @media screen and (max-width: 767px) {
+    .hero-slider__nav {
+      display: none;
+    }
+  }
+  
